@@ -15,7 +15,7 @@ do
 		mkdir -p /jail/jail${i}/${d}
 		mount -t nullfs /${d} /jail/jail${i}/${d}
 	done
-	jail -c persist vnet jid=${i} path=/jail/jail${i} host.hostname=jail-${i}
+	jail -c persist vnet jid=${i} path=/jail/jail${i} host.hostname=jail${i}.jp
 done
 
 for i in 1 2 3 4 
